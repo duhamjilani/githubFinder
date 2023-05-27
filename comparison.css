@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+:root {
+    --black: #161b22;
+    --gray: #e6e6e7;
+    --font-Segoe: "Segoe UI", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --white: #ffffff;
+    --blue: #88aef9;
+  }
+  .fa-solid{
+    display:none;
+  }
+ 
+  
+  nav{
+    display: flex;
+height:10vh;
+color:var(--white);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161b22;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo{
+    width:5%;
+  
+  }
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  a:hover{
+    color:#8b949e
+  }
+  .search_bar{
+    
+    border: #8b949e 1px solid;
+    display: flex;
+    height: 5vh;
+    width: 80%;
+    border-radius: 7px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161b22;
+
+  }
+  .search_bar button{
+   border: none;
+   width: 100px;
+   height: 100%;
+   background-color: #8b949e18;
+
+  }
+  .search_bar input{
+    background-color: #161b22;
+    width: 100%;
+    border: none;
+    outline: none;
+    color:white
+  }
+  .fa-magnifying-glass{
+    color: #8b949e;
+  }
+  ul{
+   list-style: none;
+  }
+  .navList{
+    gap: 10px;
+   display: flex;
+ 
+    align-items: center;
+
+  }
+  .firstBar{
+    display: flex;
+   
+    
+  }
+
+  .icons1{
+    display: flex;
+    flex-direction:row;
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .secondBar{
+    display: flex;
+    gap:10px;
+    flex-direction:row;
+    /* justify-content:space-between; */
+   
+  }
+  .bar{
+    gap: 10px;
+    display:flex;
+    justify-content:space-between;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content:space-around;
+
+  }
+  .upperContainer{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 60px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+  }
+  hr.hr1{
+    margin-top: 20px;
+  }
+  .bigOne{
+    display:flex;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+    gap:10px;
+   
+   
+  }
+  .result button{
+    height: 2rem;
+    width: 6rem;
+    background-color: #fcfcfd18;
+    border:2px solid rgba(128, 128, 128, 0.468) ;
+    font-weight: 700;
+  }
+  .result button:hover{
+    background-color: #8b949e;
+
+  }
+  .leftSide{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.img img{
+    border: #161b22 1px solid;
+    border-radius: 50%;
+}
+.rightSide{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+  input[type=search]{
+    height: 2rem;
+  }
+  .searchButton{
+    height: 2rem;
+    width: 6rem;
+    background-color: #fcfcfd18;
+    border:2px solid rgba(128, 128, 128, 0.468) ;
+    font-weight: 700;
+  
+  }
+  .searchButton:hover{
+ background-color: #8b949e;
+  }
+  .center{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  input[type=text]{
+    height: 3rem;
+  }
+  hr.hr2{
+    margin-top: 7rem;
+  }
+  .section1{
+    width:10%;
+    display: flex;
+   
+    gap:5px;
+    margin-left: 50px;
+  }
+ 
+.section2{
+  display: flex;
+  width:40%;
+  justify-content: space-between;
+ 
+  color:rgb(77, 77, 244);
+  gap:30px
+}
+footer{
+  margin-top: 2rem;
+  display: flex;
+ gap:100px;
+ justify-content: flex-start;
+}
+  @media screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+      text-align: center;
+     margin-bottom: 10rem;
+    }
+    
+    .firstBar{
+      margin-left:2rem;
+     }
+     .secondBar{
+      display: none;
+     }
+   
+   
+  
+    .icons {
+      display: none;
+    }
+    .upperContainer{
+        display: flex;
+        flex-direction:column;
+        align-items:first baseline;
+        gap:5px;
+        margin-top: 10px;
+        font-weight: 300;}
+        .hr1{
+            display: none;
+          }
+          .bigOne{
+            display:flex;
+            flex-direction: column;
+            margin-top: 2rem;
+           justify-content: center;
+            gap:13px;
+          }
+          input[type=search]{
+            height: 2rem;
+          }
+          .img img{
+            height: 10rem;
+            width: 10rem;
+        
+          }
+          .center{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap:10px
+          }
+
+    footer{
+      display: none;
+    }}
